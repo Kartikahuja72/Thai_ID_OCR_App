@@ -1,6 +1,6 @@
 Thai ID OCR App:-
 This project is a Node.js web application designed for optical character recognition (OCR), utilizing the Tesseract OCR engine. It facilitates the extraction of information from images, particularly focusing on identification documents. The extracted data is then processed and stored in a MongoDB database.
- 
+
  
 ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/996f1440-abfa-45dc-b4c3-e642bdd74fe4)
 ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/c3b5f6f6-e6ef-47b8-9146-00cd4fe585ad)

@@ -1,9 +1,9 @@
 Thai ID OCR App:-
 This project is a Node.js web application designed for optical character recognition (OCR), utilizing the Tesseract OCR engine. It facilitates the extraction of information from images, particularly focusing on identification documents. The extracted data is then processed and stored in a MongoDB database.
 
- 
-![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/996f1440-abfa-45dc-b4c3-e642bdd74fe4)
-![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/c3b5f6f6-e6ef-47b8-9146-00cd4fe585ad)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/39bdbf0e-15b4-444b-a1f9-b18029c850fe)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/e16afc39-e46d-4c52-82d3-333d0e03167b)
+
 
 
 
@@ -38,13 +38,15 @@ Run the App:-
 
 
 node index.js
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/24c8346b-eb53-429b-a934-54ada1919f86)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/2e00a265-ed78-4a9a-b5f5-a7ad14812c20)
+
 
 
 This will start the server at http://localhost:5000.
 Open your web browser and go to http://localhost:5000.
 
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/12f817da-c0db-4c12-86c4-49818282f897)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/2d1f97cd-c9e0-4d5f-af56-4839f627143c)
+
 
 
 Usage:
@@ -63,42 +65,49 @@ Usage:
 
 We get the Following result after the app starts:-
 Let suppose the following is the id card through which we want to extract details:-
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/bf162b9b-b3b6-4441-8195-388409a4547d)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/2bc50228-0aa2-4937-928d-ca235687869e)
+
 
 After selecting the jpg or png file when we click on the Extract text from Image button we get:-
 The followings are the details which is extracted from ID card
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/6ddae234-4b79-4643-af37-5b5628a62ce1)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/1c74cb3b-2b1e-48fe-85d2-e72f84e33e69)
+
 
 And when we scroll a little bit we get the total successful and failed OCR Operatiions:-
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/79b44df1-94ea-4c3c-9215-181c3bfa5d73)
+ ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/66d8264a-eff3-4a92-8478-4891c6401468)
+
 
 
 And as this Data is Stored in Database:-
- ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/46f36847-5f89-4b02-b239-3821feb87d3a)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/96d6483d-fcef-48b5-8474-7834135547e2)
 
 The following are the result which is tested on console:
  
-![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/52c61d22-77f2-4831-897a-681b79e5b70b)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/b78c7e2d-dd9f-41db-a1a1-b5fd15cd22b0)
+
 
 
 
 
 Project Files:-
 In view folder there is Index.ejs file which is main frontend file:-
-![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/c2d9308f-12f4-4e91-be85-8567e06beae0)
+![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/560998ec-bf2f-42b5-b793-918ee19a6421)
+
 
                                               
 
 
 Index.js is the main node.js file in which my project backend is there:-
 Package.json and package-lock.json are the files which contain all the dependencies and sub-dependencies:-
-                                     ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/725d31bb-db41-4568-8722-f4e298773aeb)
+                            ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/81cb8de4-1732-46e1-859c-eed79756a65d)
+
                        
 In Routes folder there is file Data which contain the Schema of My database:-
-                                        ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/4f38361a-9658-4517-95a2-2b657680d298)
+                            ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/bddd8454-1d86-4d75-93a1-d8e26c50d633)
+
                    
 In Controller folder there is file crud.js in that there is implementation of all the crud operation is present:-
-                                 ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/7c7c4160-d1ca-4705-8743-cc2e377447fd)
+                           ![image](https://github.com/Kartikahuja72/Thai_ID_OCR_App/assets/121183525/42beb3dc-16a4-4da3-b751-e463377360ee)
 
                       
 

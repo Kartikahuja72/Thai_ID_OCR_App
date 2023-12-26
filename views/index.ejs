@@ -1,0 +1,132 @@
+User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai ID OCR App</title>
+   <style>
+/* style added to web page */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        text-align: center;
+        color: #666;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        width: 100%; 
+        max-width: 450px; 
+        height: 450px;
+        padding: 12px;
+        box-sizing: border-box;
+        margin: 20px auto; 
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none; 
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+    }
+
+    div:focus {
+        outline: none;
+        border-color: #4caf50; 
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
+    }
+
+    ul.initially-hidden {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+/* Your existing CSS styles */
+
+/* OCR Statistics block */
+.ocr-statistics {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ocr-statistics h2 {
+    color: #333;
+}
+
+.ocr-statistics p {
+    margin: 10px 0;
+    color: #666;
+}
+
+   </style>
+   
+</head>
+<body>
+    <p>Thai ID OCR App</p>
+    <form action="/extracttextfromimage" method="post" enctype="multipart/form-data">
+        <label for="file">Upload Image File:</label>
+        <input type="file" name="file" accept="image/*" required id="">
+        <button>Extract Text From Image</button>
+    </form>
+    <!-- Inside this, we will populate the data by using -->
+    <div cols="10" rows="10">
+        <ul>
+            <li>Name: <%=data.Name%></li>
+            <li>Last Name: <%=data.LastName%></li>
+            <li>Identification Number: <%=data.IdentificationNumber%></li>
+            <li>Date of Birth: <%=data.DateOfBirth%></li>
+            <li>Date of Issue: <%=data.DateOfIssue%></li>
+            <li>Date of Expiry: <%=data.DateOfExpiry%></li>
+        </ul>
+    </div>
+
+    <!-- OCR Statistics block -->
+    <div class="ocr-statistics">
+        <h2>OCR Statistics</h2>
+        <p><b>Total Successful OCR Operations:</b><br><span id="successCount"><%=data.kk%></span></p>
+        <p><b>Total Failed OCR Operations:</b><br><span id="failureCount"><%=data.kkk%></span></p>
+    </div>
+</body>
+</html>
